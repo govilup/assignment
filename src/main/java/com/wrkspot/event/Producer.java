@@ -7,6 +7,11 @@ import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.stereotype.Service;
 
+/**
+ * Producer to producer messages to defined binding in application.yml file.
+ * @param <T>
+ * @author govil
+ */
 @Service
 @Slf4j
 public class Producer<T> {

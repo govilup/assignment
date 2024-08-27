@@ -6,7 +6,13 @@ import jakarta.persistence.criteria.CriteriaQuery;
 import jakarta.persistence.criteria.Root;
 import org.springframework.data.jpa.domain.Specification;
 
+/**
+ * Utility class using Specification interface and CriteriaBuilder to handle filter scenarios.
+ * @author govil
+ */
 public class CustomerSpecification {
+
+    private CustomerSpecification() {}
 
     public static Specification<Customer> byName(String name) {
         return (Root<Customer> root, CriteriaQuery<?> query, CriteriaBuilder builder) -> {
