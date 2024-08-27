@@ -1,6 +1,7 @@
 package com.wrkspot.models.dtos;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
 
 @Data
 @Builder(toBuilder = true)

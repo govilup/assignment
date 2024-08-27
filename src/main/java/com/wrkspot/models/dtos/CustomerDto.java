@@ -1,12 +1,15 @@
 package com.wrkspot.models.dtos;
 
 import jakarta.validation.constraints.NotBlank;
-import lombok.*;
+import lombok.Builder;
+import lombok.Data;
+import lombok.EqualsAndHashCode;
 
 import java.util.Set;
 
 @Data
 @Builder(toBuilder = true)
+@EqualsAndHashCode
 public class CustomerDto {
 
     @NotBlank(message = "Please enter first name")
