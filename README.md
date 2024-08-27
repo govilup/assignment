@@ -52,6 +52,7 @@ Technology used to develop this service
 * REST APIs
 * Maven
 * Lombok
+* MapStruct - for model mapping
 * Spring Cloud Stream
 * PostgreSql
 
